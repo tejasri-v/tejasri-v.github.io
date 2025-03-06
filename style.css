@@ -1,0 +1,33 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #00adef;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+#image-gallery, #media-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#image-gallery img, #media-section img, #media-section video {
+    width: 200px;
+    margin: 10px;
+}
+
+#pdf-links ul {
+    list-style: none;
+}
