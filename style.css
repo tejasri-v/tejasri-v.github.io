@@ -1,5 +1,3 @@
-/* Standardized spacing and scrolling behavior */
-
 .frame {
   background-color: #968da4;
   display: flex;
@@ -17,7 +15,6 @@
   position: relative;
 }
 
-/* Modified to make it a scrollable container that moves with content */
 .frame .div-2 {
   position: absolute;
   width: calc(100% - 356px - 30px);
@@ -26,11 +23,11 @@
   left: 356px;
   right: 30px;
   background-color: #61644999;
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow: auto;
   border-radius: 5px;
+  padding-bottom: 30px;
 }
 
-/* Scrollbar styling */
 .frame .div-2::-webkit-scrollbar {
   width: 8px;
   display: block;
@@ -45,44 +42,392 @@
   background-color: rgba(97, 100, 73, 0.3);
 }
 
-/* Standardized section spacing */
-.frame section {
-  margin-bottom: 60px;  /* Consistent bottom margin for all sections */
-  padding: 0 40px;      /* Consistent horizontal padding */
+.frame .contact {
+  position: relative;
+  width: 100%;
+  height: 282px;
+  margin-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-/* Standardized section headings */
-.frame .section-heading {
+.frame .linkedin {
+  position: absolute;
+  width: 136px;
+  top: 84px;
+  left: 41px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .instagram {
+  position: absolute;
+  width: 136px;
+  top: 144px;
+  left: 41px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 136px;
+  top: 204px;
+  left: 41px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  width: 247px;
+  top: 8px;
+  left: 41px;
   font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-style: italic;
   color: #c6dea6;
   font-size: 36px;
-  margin-bottom: 30px;  /* Consistent spacing after headings */
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-/* Standardized content text */
-.frame .section-content {
+.frame .vector {
+  width: calc(100% - 84px);
+  max-width: 1027px;
+  margin-left: 42px;
+  position: relative;
+  height: 1px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.frame .CV {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 30px 40px;
+}
+
+.frame .education-columbia {
+  position: relative;
+  width: calc(100% - 100px);
+  margin-top: 40px;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-3 {
+  width: 247px;
+  margin-top: 20px;
+  margin-left: 41px;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c6dea6;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .img {
+  width: calc(100% - 82px);
+  max-width: 1027px;
+  margin-left: 41px;
+  position: relative;
+  height: 1px;
+}
+
+.frame .misc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 16px 40px;
+  margin-top: 30px;
+}
+
+.frame .text-wrapper-4 {
+  width: 247px;
+  margin-top: 0;
+  margin-left: 4px;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c6dea6;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vector-2 {
+  position: relative;
+  width: calc(100% - 84px);
+  max-width: 1027px;
+  height: 1px;
+  margin-left: 42px;
+  margin-top: 30px;
+}
+
+.frame .code {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 387px;
+  padding: 6px 15px;
+  margin-top: 30px;
+}
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  width: 354px;
+  top: 71px;
+  left: 21px;
   font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #dff2d8;
   font-size: 24px;
-  line-height: 1.5;     /* Improved line spacing */
-  margin-top: 20px;     /* Consistent top margin */
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
 }
 
-/* Standardize divider lines */
-.frame .section-divider {
-  width: calc(100% - 80px);
+.frame .text-wrapper-6 {
+  position: absolute;
+  width: 354px;
+  top: 131px;
+  left: 21px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper-7 {
+  position: absolute;
+  width: 354px;
+  top: 191px;
+  left: 21px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper-8 {
+  position: absolute;
+  width: 354px;
+  top: 251px;
+  left: 21px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper-9 {
+  position: absolute;
+  width: 427px;
+  top: 311px;
+  left: 21px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper-10 {
+  width: 247px;
+  position: relative;
+  margin-top: 0;
+  margin-left: 20px;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c6dea6;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vector-3 {
+  width: calc(100% - 82px);
   max-width: 1027px;
-  margin: 40px auto;    /* Centered with consistent spacing */
+  margin-left: 41px;
+  margin-top: 30px;
+  position: relative;
   height: 1px;
-  background-color: #c6dea6;  /* Match section heading color */
 }
 
-/* Fixed sidebar that stays in place */
+.frame .data-visualization {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 15px 20px;
+  margin-top: 30px;
+}
+
+.frame .text-wrapper-11 {
+  width: 301px;
+  margin-top: 0;
+  margin-left: 20px;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c6dea6;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vector-4 {
+  width: calc(100% - 84px);
+  max-width: 1027px;
+  margin-left: 42px;
+  margin-top: 30px;
+  position: relative;
+  height: 1px;
+}
+
+.frame .design {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 15px 20px;
+  margin-top: 30px;
+}
+
+.frame .text-wrapper-12 {
+  width: 155px;
+  margin-top: 0;
+  margin-left: 20px;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c6dea6;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vector-5 {
+  width: calc(100% - 84px);
+  max-width: 1027px;
+  margin-left: 42px;
+  margin-top: 30px;
+  position: relative;
+  height: 1px;
+}
+
+.frame .art {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 15px 20px;
+  margin-top: 30px;
+}
+
+.frame .text-wrapper-13 {
+  width: 101px;
+  margin-top: 0;
+  margin-left: 21px;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c6dea6;
+  font-size: 36px;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vector-6 {
+  width: calc(100% - 84px);
+  max-width: 1027px;
+  margin-left: 42px;
+  margin-top: 30px;
+  position: relative;
+  height: 1px;
+}
+
+.frame .about {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 505px;
+  padding: 15px 20px;
+  margin-top: 21px;
+}
+
+.frame .born-and-raised-in {
+  position: relative;
+  width: calc(100% - 569px);
+  max-width: 467px;
+  margin-top: 83px;
+  margin-left: 21px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .IMG {
+  position: absolute;
+  width: 520px;
+  height: 379px;
+  top: 99px;
+  right: 22px;
+  object-fit: cover;
+}
+
 .frame .div-3 {
-  position: fixed;      /* Keep sidebar fixed */
+  position: fixed;
   width: 265px;
   height: 909px;
   top: 38px;
@@ -90,63 +435,107 @@
   z-index: 10;
 }
 
-/* Contact section specific styles */
-.frame .contact {
-  position: relative;
-  padding: 30px 40px;
-  margin-top: 0;        /* Reset margin */
+.frame .text-wrapper-14, 
+.frame .text-wrapper-15, 
+.frame .text-wrapper-16, 
+.frame .text-wrapper-17, 
+.frame .text-wrapper-18, 
+.frame .text-wrapper-19, 
+.frame .text-wrapper-20 {
+  font-family: "Estedad-VF-ExtraLight", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #393027;
+  font-size: 20px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease;
 }
 
-.frame .linkedin,
-.frame .instagram,
-.frame .text-wrapper {
-  margin-bottom: 40px;  /* Consistent spacing between links */
-  position: relative;   /* Change from absolute to relative */
-  left: 0;              /* Reset left position */
+.frame .text-wrapper-14:hover, 
+.frame .text-wrapper-15:hover, 
+.frame .text-wrapper-16:hover, 
+.frame .text-wrapper-17:hover, 
+.frame .text-wrapper-18:hover, 
+.frame .text-wrapper-19:hover, 
+.frame .text-wrapper-20:hover,
+.frame .text-wrapper-21:hover {
+  color: #c6dea6;
+  cursor: pointer;
 }
 
-.frame .linkedin {
-  margin-top: 40px;     /* Space after heading */
+.frame .text-wrapper-14 {
+  top: 374px;
+  left: 0;
 }
 
-/* CV section specific styles */
-.frame .CV {
-  position: relative;
-  padding: 30px 40px;
-  margin-top: 0;        /* Reset margin */
+.frame .text-wrapper-15 {
+  top: 334px;
+  left: 0;
 }
 
-.frame .education-columbia {
-  margin: 20px 0 0 0;   /* Standardized margin */
-  padding-left: 20px;   /* Indent text slightly */
-  line-height: 1.6;     /* Improved line spacing */
+.frame .text-wrapper-16 {
+  top: 294px;
+  left: 0;
 }
 
-/* About section specific styles */
-.frame .about {
-  position: relative;
-  padding: 30px 40px;
-  margin-top: 0;        /* Reset margin */
-  display: flex;
-  flex-wrap: wrap;
+.frame .text-wrapper-17 {
+  top: 254px;
+  left: 0;
 }
 
-.frame .born-and-raised-in {
-  width: calc(100% - 550px); /* Leave room for image */
-  margin: 40px 0 0 0;    /* Standardized margin */
-  line-height: 1.6;     /* Improved line spacing */
+.frame .text-wrapper-18 {
+  top: 214px;
+  left: 0;
 }
 
-.frame .IMG {
-  position: relative;   /* Change from absolute to relative */
-  width: 500px;
-  height: auto;
-  margin-top: 40px;     /* Match text top margin */
-  margin-left: 30px;    /* Space between text and image */
-  object-fit: cover;
+.frame .text-wrapper-19 {
+  top: 174px;
+  left: 0;
 }
 
-/* Responsive adjustments */
+.frame .text-wrapper-20 {
+  top: 134px;
+  left: 0;
+}
+
+.frame .vector-7 {
+  width: 265px;
+  top: 121px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+}
+
+.frame .text-wrapper-21 {
+  position: absolute;
+  width: 265px;
+  top: -1px;
+  left: 0;
+  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #393027;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make sure html and body take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Add responsive adjustments for smaller screens */
 @media (max-width: 1200px) {
   .frame .div-2 {
     width: calc(100% - 320px);
@@ -160,6 +549,7 @@
   
   .frame .IMG {
     width: 400px;
+    height: auto;
   }
   
   .frame .born-and-raised-in {
@@ -197,7 +587,7 @@
   }
   
   .frame .born-and-raised-in {
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 20px;
+    width: calc(100% - 330px);
+    font-size: 20px;
   }
 }
