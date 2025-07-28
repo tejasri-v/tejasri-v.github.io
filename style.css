@@ -160,15 +160,18 @@
 }
 
 /* --- Section Title Styles (Minor Adjustments) --- */
-.frame .text-wrapper-13, /* Art */
+/* This combined rule applies a margin-bottom to ALL section headings */
+.frame .text-wrapper-13, /* About, Art */
 .frame .text-wrapper-12, /* Design */
 .frame .text-wrapper-11, /* Data Viz */
+.frame .text-wrapper-10, /* Code */
 .frame .text-wrapper-4,  /* Misc */
+.frame .text-wrapper-3,  /* CV */
 .frame .text-wrapper-2 { /* Contact */
   position: relative; /* Ensure it respects flow */
   margin-top: 0; /* Remove top margin, padding of parent takes care of it */
   margin-left: 0; /* Remove left margin, padding of parent takes care of it */
-  /* Keep other font styles as they are */
+  margin-bottom: 20px; /* Added consistent space below ALL headings */
   font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -177,23 +180,6 @@
   letter-spacing: 0;
   line-height: normal;
   width: auto; /* Allow width to be natural */
-}
-
-/* Individual updates for specific headings to add space below */
-.frame .text-wrapper-10, /* Code Heading */
-.frame .text-wrapper-3 { /* CV Heading */
-  position: relative;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 20px; /* Added space below these specific headings */
-  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  color: #c6dea6;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  width: auto;
 }
 
 /* --- Separator Line Styles --- */
