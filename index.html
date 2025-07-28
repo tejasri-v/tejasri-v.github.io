@@ -5,60 +5,30 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Tejasri Vijayakumar</title>
-    <style>
-      /* Added styles for flexbox sections */
-      .section-content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 15px;
-        margin-bottom: 30px;
-      }
-      
-      .asset-item {
-        flex: 0 0 calc(33.333% - 20px); /* Adjust size as needed */
-        min-width: 200px;
-        margin-bottom: 20px;
-      }
-      
-      .asset-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-      
-      .asset-item .caption {
-        margin-top: 8px;
-        font-size: 14px;
-      }
-
-      /* Ensure the main container can scroll properly */
-      .div-2 {
-        overflow-y: auto;
-        height: 100%;
-        padding: 20px;
-      }
-    </style>
+    <!-- Removed inline styles for div-2 padding - now in style.css -->
   </head>
   <body>
     <div class="frame">
       <div class="div">
         <div class="div-2">
           <!-- About Section - Now First -->
-          <div class="about" id="about-section">
+          <div class="about main-content-section" id="about-section">
             <div class="text-wrapper-13">About</div>
-            <p class="born-and-raised-in">
-              BORN AND RAISED IN NEW YORK, TEJASRI VIJAYAKUMAR IS CURRENTLY WORKING IN MARKETING HYPERALLERGIC. A RECENT
-              GRADUATE OF COLUMBIA UNIVERSITY WITH A DEGREE IN COMPUTER SCIENCE AND VISUAL ART, LEADERSHIP EXPERIENCE
-              FROM HER TIME AS THE STUDENT BODY PRESIDENT OF COLUMBIA, AND MORE, TEJI IS INTERESTED IN THE INTERSECTION
-              BETWEEN POLICY, DATA, AND DESIGN.
-            </p>
-            <img class="IMG" src="img/IMG-2382-1.png" />
+            <!-- Flex container for about section text and image -->
+            <div class="about-content-wrapper">
+              <p class="born-and-raised-in">
+                BORN AND RAISED IN NEW YORK, TEJASRI VIJAYAKUMAR IS CURRENTLY WORKING IN MARKETING HYPERALLERGIC. A RECENT
+                GRADUATE OF COLUMBIA UNIVERSITY WITH A DEGREE IN COMPUTER SCIENCE AND VISUAL ART, LEADERSHIP EXPERIENCE
+                FROM HER TIME AS THE STUDENT BODY PRESIDENT OF COLUMBIA, AND MORE, TEJI IS INTERESTED IN THE INTERSECTION
+                BETWEEN POLICY, DATA, AND DESIGN.
+              </p>
+              <img class="IMG" src="img/IMG-2382-1.png" alt="Tejasri Vijayakumar" />
+            </div>
           </div>
-          <img class="vector-6" src="img/vector-2.svg" />
+          <img class="vector-6 separator-line" src="img/vector-2.svg" alt="Separator" />
 
           <!-- Art Section -->
-          <div class="art" id="art-section">
+          <div class="art main-content-section" id="art-section">
             <div class="text-wrapper-13">Art</div>
             <div class="section-content art-content">
               <!-- Example of how assets will be added dynamically -->
@@ -70,99 +40,115 @@
               -->
             </div>
           </div>
-          <img class="vector-5" src="img/vector-7.svg" />
+          <img class="vector-5 separator-line" src="img/vector-7.svg" alt="Separator" />
 
           <!-- Design Section -->
-          <div class="design" id="design-section">
+          <div class="design main-content-section" id="design-section">
             <div class="text-wrapper-12">Design</div>
             <div class="section-content design-content">
               <!-- Design assets will appear here -->
             </div>
           </div>
-          <img class="vector-4" src="img/vector-8.svg" />
+          <img class="vector-4 separator-line" src="img/vector-8.svg" alt="Separator" />
 
           <!-- Data Visualization Section -->
-          <div class="data-visualization" id="data-viz-section">
+          <div class="data-visualization main-content-section" id="data-viz-section">
             <div class="text-wrapper-11">Data Visualization</div>
             <div class="section-content data-viz-content">
               <!-- Data visualization assets will appear here -->
             </div>
           </div>
-          <img class="vector-3" src="img/vector-6.svg" />
+          <img class="vector-3 separator-line" src="img/vector-6.svg" alt="Separator" />
 
           <!-- Code Section -->
-          <div class="code" id="code-section">
+          <div class="code main-content-section" id="code-section">
             <div class="text-wrapper-10">Code</div>
+            <!-- Links now use standardized margins via CSS on the <a> tag -->
             <a
               href="https://gist.github.com/tejasri-v/2c730ba776a14e327c21e5c412f43fca"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="text-wrapper-5">REMOTE ACCESS TO DATABASE</div></a
+              class="code-link"
+              >REMOTE ACCESS TO DATABASE</a
             >
             <a
               href="https://gist.github.com/tejasri-v/f1741e7d29558aa9be7efcf84b00c155"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="text-wrapper-6">LOOKUP SERVER</div></a
+              class="code-link"
+              >LOOKUP SERVER</a
             >
             <a
               href="https://gist.github.com/tejasri-v/bd150250c5c31d37f6392740040f52be"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="text-wrapper-7">WEBPAGE DOWNLOADER</div></a
+              class="code-link"
+              >WEBPAGE DOWNLOADER</a
             >
             <a
-              href="https://gist.github.com/tejasri-v/50a9326e11d642b1eba03b5f8363a7bc"
+              href="https://gist.github.com/tejasri-v/50a9326e11d642b1eba03b5f8363a3bc"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="text-wrapper-8">DIJKSTRA'S ALGORITHM</div></a
+              class="code-link"
+              >DIJKSTRA'S ALGORITHM</a
             >
 
             <a
               href="https://gist.github.com/tejasri-v/7907c56b78893e41bf6cb6320200361f"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="text-wrapper-9">FAILED LOGIN ATTEMPT TRACKER</div></a
+              class="code-link"
+              >FAILED LOGIN ATTEMPT TRACKER</a
             >
             <a
               href="https://tejasri-v.github.io/burberry-clock/"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="text-wrapper-burberry">BURBERRY CLOCK</div></a
+              class="code-link"
+              >BURBERRY CLOCK</a
             >
-
-            
           </div>
 
           <!-- Misc Section -->
-          <div class="misc" id="misc-section">
+          <div class="misc main-content-section" id="misc-section">
             <div class="text-wrapper-4">Misc.</div>
             <div class="section-content misc-content">
               <!-- Misc assets will appear here -->
             </div>
           </div>
-          <img class="img" src="img/vector-4.svg" />
+          <img class="img separator-line" src="img/vector-4.svg" alt="Separator" />
 
           <!-- CV Section -->
-          <div class="CV" id="cv-section">
+          <div class="CV main-content-section" id="cv-section">
             <div class="text-wrapper-3">CV</div>
+            <!-- CV content would go here -->
+            <p class="education-columbia">
+              EDUCATION: COLUMBIA UNIVERSITY, B.S. COMPUTER SCIENCE, B.A. VISUAL ARTS (2024)<br />
+              LEADERSHIP: STUDENT BODY PRESIDENT, COLUMBIA COLLEGE (2023-2024)<br />
+              EXPERIENCE: MARKETING INTERN, HYPERALLERGIC (2024); DESIGN INTERN, XYZ CORP (2023)<br />
+              SKILLS: PYTHON, JAVA, JAVASCRIPT, HTML, CSS, ADOBE CREATIVE SUITE, FIGMA, BLENDER
+            </p>
           </div>
-          <img class="vector" src="img/vector-5.svg" />
+          <img class="vector separator-line" src="img/vector-5.svg" alt="Separator" />
 
           <!-- Contact Section - Now Last -->
-          <div class="contact" id="contact-section">
+          <div class="contact main-content-section" id="contact-section">
             <div class="text-wrapper-2">Contact</div>
+            <!-- Links now use standardized margins via CSS on the <a> tag -->
             <a
               href="https://www.linkedin.com/in/tejasri-vijayakumar-a3127b204/"
               target="_blank"
               rel="noopener noreferrer"
-              ><div class="linkedin">LINKEDIN</div></a
+              class="contact-link"
+              >LINKEDIN</a
             >
             <a href="https://www.instagram.com/tejasriii/" target="_blank" rel="noopener noreferrer"
-              ><div class="instagram">INSTAGRAM</div></a
+              class="contact-link"
+              >INSTAGRAM</a
             >
             <a href="mailto:tv2265@columbia.edu" target="_blank" rel="noopener noreferrer"
-              ><div class="text-wrapper">EMAIL</div></a
+              class="contact-link"
+              >EMAIL</a
             >
           </div>
         </div>
@@ -174,7 +160,7 @@
           <a href="#data-viz-section" class="nav-link"><div class="text-wrapper-18">DATA VISUALIZATION</div></a>
           <a href="#design-section" class="nav-link"><div class="text-wrapper-19">DESIGN</div></a>
           <a href="#art-section" class="nav-link"><div class="text-wrapper-20">ART</div></a>
-          <img class="vector-7" src="img/vector-1.svg" />
+          <img class="vector-7" src="img/vector-1.svg" alt="Vertical Separator" />
           <a href="#about-section" class="nav-link"><div class="text-wrapper-21">Tejasri Vijayakumar</div></a>
         </div>
       </div>
@@ -197,9 +183,9 @@
               const scrollContainer = document.querySelector('.div-2');
               
               // Calculate the scroll position
+              // Offset by the container's top padding if necessary, but scrollIntoView handles it well
               const targetPosition = targetElement.offsetTop;
               
-              // Scroll to the target position
               scrollContainer.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
