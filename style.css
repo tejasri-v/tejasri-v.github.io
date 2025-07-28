@@ -1,3 +1,13 @@
+/* Add custom font import at the top */
+@font-face {
+  font-family: 'Spectral'; /* This is the name you'll use in your CSS */
+  src: url('./fonts/Spectral-MediumItalic.ttf') format('truetype'), /* Path to your font file relative to style.css */
+  font-weight: 500; /* Matches the "Medium" part of "MediumItalic" */
+  font-style: italic; /* Matches the "Italic" part */
+  font-display: swap; /* Tells the browser how to display text while the font is loading */
+}
+
+
 .frame {
   background-color: #968da4;
   display: flex;
@@ -172,14 +182,30 @@
   margin-top: 0; /* Remove top margin, padding of parent takes care of it */
   margin-left: 0; /* Remove left margin, padding of parent takes care of it */
   margin-bottom: 20px; /* Added consistent space below ALL headings */
-  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-style: italic;
+  font-family: 'Spectral', serif; /* Applied Spectral font */
+  font-weight: 500; /* Retained original weight */
+  font-style: italic; /* Retained original style */
   color: #c6dea6;
   font-size: 36px;
   letter-spacing: 0;
   line-height: normal;
   width: auto; /* Allow width to be natural */
+}
+
+/* User's name */
+.frame .text-wrapper-21 {
+  position: absolute;
+  width: 265px;
+  top: -1px;
+  left: 0;
+  font-family: 'Spectral', serif; /* Applied Spectral font */
+  font-weight: 500;
+  font-style: italic;
+  color: #393027;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease;
 }
 
 /* --- Separator Line Styles --- */
@@ -257,21 +283,6 @@
   left: 0;
   position: absolute;
   height: 1px;
-}
-
-.frame .text-wrapper-21 {
-  position: absolute;
-  width: 265px;
-  top: -1px;
-  left: 0;
-  font-family: "Spectral-MediumItalic", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  color: #393027;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: normal;
-  transition: color 0.3s ease;
 }
 
 .nav-link {
