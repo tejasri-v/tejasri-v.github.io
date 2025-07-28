@@ -122,12 +122,7 @@
   margin-top: 30px;
 }
 
-.frame .CV {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 30px 40px;
-}
+
 
 .frame .education-columbia {
   position: relative;
@@ -164,14 +159,7 @@
   height: 1px;
 }
 
-.frame .misc {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  padding: 16px 40px;
-  margin-top: 30px;
-}
+
 
 .frame .text-wrapper-4 {
   width: 247px;
@@ -196,14 +184,7 @@
   margin-top: 30px;
 }
 
-.frame .code {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 447px; /* Increased from 387px */
-  padding: 6px 15px;
-  margin-top: 30px;
-}
+
 
 .frame .text-wrapper-5 {
   position: absolute;
@@ -326,14 +307,7 @@
   height: 1px;
 }
 
-.frame .data-visualization {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  padding: 15px 20px;
-  margin-top: 30px;
-}
+
 
 .frame .text-wrapper-11 {
   width: 301px;
@@ -358,14 +332,7 @@
   height: 1px;
 }
 
-.frame .design {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  padding: 15px 20px;
-  margin-top: 30px;
-}
+
 
 .frame .text-wrapper-12 {
   width: 155px;
@@ -390,14 +357,7 @@
   height: 1px;
 }
 
-.frame .art {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  padding: 15px 20px;
-  margin-top: 30px;
-}
+
 
 .frame .text-wrapper-13 {
   width: 101px;
@@ -422,14 +382,7 @@
   height: 1px;
 }
 
-.frame .about {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 505px;
-  padding: 15px 20px;
-  margin-top: 21px;
-}
+
 
 .frame .born-and-raised-in {
   position: relative;
@@ -618,4 +571,13 @@ html, body {
     width: calc(100% - 330px);
     font-size: 20px;
   }
+}
+
+.frame .section-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 20px 40px;
+  margin-top: 30px;
 }
