@@ -268,7 +268,21 @@
   left: 21px;
   font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  color: #00adef;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .text-wrapper-burberry {
+  position: absolute;
+  width: 427px;
+  top: 391px;
+  left: 21px;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
