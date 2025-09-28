@@ -81,9 +81,12 @@
 }
 
 .frame .born-and-raised-in {
+  flex: 1; /* let it grow/shrink */
+  max-width: 50%; /* keep it from hogging space */
+  width: auto;    /* remove fixed width */
   position: static; /* Remove absolute positioning */
-  width: 467px; /* Maintain original approximate width */
-  max-width: 100%; /* Ensure responsiveness */
+  /* width: 467px; /* Maintain original approximate width */
+  /* max-width: 100%;  Ensure responsiveness */
   margin-top: 0; /* Handled by flexbox */
   margin-left: 0; /* Align with parent padding */
   flex-grow: 1; /* Allows text to take available space */
@@ -96,14 +99,17 @@
 }
 
 .frame .IMG {
-  position: static; /* Remove absolute positioning */
-  width: 520px; /* Maintain original approximate width */
+  flex: 1;        /* let it share space with text */
+  max-width: 50%; /* image takes up half */
   height: auto;
+  position: static; /* Remove absolute positioning */
+  /* width: 520px; /* Maintain original approximate width */
+  /* height: auto;
   object-fit: cover;
   top: auto; /* Remove absolute positioning properties */
   right: auto; /* Remove absolute positioning properties */
   flex-shrink: 0; /* Prevent image from shrinking too much */
-  max-width: 100%; /* Ensure responsiveness on smaller screens */
+  /* max-width: 100%; /* Ensure responsiveness on smaller screens */
 }
 
 
