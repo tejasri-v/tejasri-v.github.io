@@ -319,12 +319,18 @@ html, body {
   margin-bottom: 20px;
 }
 
-.asset-item img,
+.asset-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .asset-item video {
   width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
+  transition: opacity 0.3s ease;
 }
 
 .asset-item .caption {
