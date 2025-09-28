@@ -319,7 +319,8 @@ html, body {
   margin-bottom: 20px;
 }
 
-.asset-item img {
+.asset-item img,
+.asset-item video {
   width: 100%;
   height: auto;
   object-fit: cover;
