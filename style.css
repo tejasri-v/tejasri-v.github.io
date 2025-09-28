@@ -322,6 +322,8 @@ html, body {
 .asset-item .caption {
   margin-top: 8px;
   font-size: 14px;
+  color: #dff2d8;
+  font-family: 'Spectral', serif;; 
 }
 
 
