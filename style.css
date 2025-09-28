@@ -87,7 +87,7 @@
   margin-top: 0; /* Handled by flexbox */
   margin-left: 0; /* Align with parent padding */
   flex-grow: 1; /* Allows text to take available space */
-  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-family: "Spectral", serif;
   font-weight: 300;
   color: #dff2d8;
   font-size: 24px;
