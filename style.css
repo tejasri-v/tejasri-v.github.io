@@ -142,6 +142,19 @@
   line-height: normal;
 }
 
+.frame .misc-description {
+  display: block; /* Make links take up full width and stack */
+  margin-bottom: 20px; /* Standardized vertical spacing between code links */
+  margin-left: 0; /* Removed explicit margin-left to align with parent section padding */
+  text-decoration: underline;
+  font-family: "Estedad-VF-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #dff2d8;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
 /* Remove individual .text-wrapper-5 to -burberry styles as they are replaced by .code-link */
 .frame .text-wrapper-5,
 .frame .text-wrapper-6,
@@ -337,7 +350,7 @@ html, body {
   margin-top: 8px;
   font-size: 14px;
   color: #dff2d8;
-  font-family: 'Spectral', serif;; 
+  font-family: 'Spectral', serif; 
 }
 
 
