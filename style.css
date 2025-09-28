@@ -82,7 +82,7 @@
 
 .frame .born-and-raised-in {
   flex: 1; /* let it grow/shrink */
-  max-width: 50%; /* keep it from hogging space */
+  max-width: 70%; /* keep it from hogging space */
   width: auto;    /* remove fixed width */
   position: static; /* Remove absolute positioning */
   /* width: 467px; /* Maintain original approximate width */
@@ -100,7 +100,7 @@
 
 .frame .IMG {
   flex: 1;        /* let it share space with text */
-  max-width: 50%; /* image takes up half */
+  max-width: 30%; /* image takes up half */
   height: auto;
   position: static; /* Remove absolute positioning */
   /* width: 520px; /* Maintain original approximate width */
