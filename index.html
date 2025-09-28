@@ -252,20 +252,48 @@
       });
 
       // Function to add a new asset to a section
-      function addAsset(section, imagePath, caption) {
+      function addAsset(section, src, caption) {
         const sectionContent = document.querySelector(`.${section}-content`);
         if (!sectionContent) return;
-        
+      
         const asset = document.createElement('div');
         asset.className = 'asset-item';
-        
-        asset.innerHTML = `
-          <img src="${imagePath}" alt="${caption || 'Portfolio asset'}">
-          ${caption ? `<div class="caption">${caption}</div>` : ''}
-        `;
-        
+      
+        // Determine if file is a video
+        const isVideo = src.match(/\.(mp4|mov|webm)$/i);
+      
+        if (isVideo) {
+          const video = document.createElement('video');
+          video.src = src;
+          video.muted = true; // required for autoplay on hover
+          video.loop = true;  // optional: loop the video
+          video.playsInline = true; // mobile-friendly
+          video.style.width = '100%';
+          video.style.height = 'auto';
+          video.style.objectFit = 'cover';
+          
+          // Play on hover
+          video.addEventListener('mouseenter', () => video.play());
+          video.addEventListener('mouseleave', () => video.pause());
+      
+          asset.appendChild(video);
+        } else {
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = caption || '';
+          asset.appendChild(img);
+        }
+      
+        if (caption) {
+          const cap = document.createElement('div');
+          cap.className = 'caption';
+          cap.textContent = caption;
+          asset.appendChild(cap);
+        }
+      
         sectionContent.appendChild(asset);
       }
+
 
       // Example usage:
       addAsset('art', 'assets/images/00.jpg', 'Night Walks (Sakura Park), India ink and cyanotype on paper, 2023');
